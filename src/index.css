@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Bebas;
+    src: url("../src/assets/fonts/Bebas.ttf");
+
+}
+@font-face {
+    font-family: rillosta;
+    src: url("../src/assets/fonts/Rillosta.otf");
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-Bebas: Bebas, "sans-serif";
+    --font-Rillosta: Rillosta, "sans-serif";
+}
