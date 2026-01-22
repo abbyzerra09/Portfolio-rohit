@@ -1,0 +1,44 @@
+ .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center; /* Centers the name */
+  align-items: center;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-name {
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-name.hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Slides up into view */
+}
+
+.nav-name.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Styling */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-name {
+  font-size: 5rem;
+  transition: opacity 0.3s ease;
+}
+
+.hero-name.fade-out {
+  opacity: 0;
+}

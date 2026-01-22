@@ -1,11 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 @font-face {
     font-family: Bebas;
     src: url("../src/assets/fonts/Bebas.ttf");
 
 }
+
+@font-face {
+    font-family: Bricolage;
+    src: url("../src/assets/fonts/Bricolage.ttf");
+
+}
+
+@font-face {
+    font-family: Lostar;
+    src: url("../src/assets/fonts/Lostar.ttf");
+
+}
+
 @font-face {
     font-family: rillosta;
     src: url("../src/assets/fonts/Rillosta.otf");
+}
+
+@font-face {
+    font-family: nohemi;
+    src: url("../src/assets/fonts/nohemi.otf");
 }
 
 @import "tailwindcss";
@@ -13,4 +34,16 @@
 @theme{
     --font-Bebas: Bebas, "sans-serif";
     --font-Rillosta: Rillosta, "sans-serif";
+    --font-outfit: outfit, "sans-serif";
+    --font-nohemi: nohemi, "sans-serif";
+    --font-Lostar: Lostar, "sans-serif";
+    --font-Bricolage: Bricolage, "sans-serif";
+    --font-Manrope: Manrope, "sans-serif";
+}
+
+@layer base {
+  ::selection {
+    background-color: rgba(76, 199, 152, 0.363); /* equivalent to bg-lime-300 */
+    color: #1a2e05;            /* equivalent to text-lime-950 */
+  }
 }
