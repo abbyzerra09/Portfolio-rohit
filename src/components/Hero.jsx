@@ -19,7 +19,7 @@ function HeroSection(){
                 background: `radial-gradient(600px at ${mousePos.x}px ${mousePos.y}px, rgba(20, 184, 166, 0.15), transparent 80%)`}}/>
                 <h1 className='font-Bricolage text-3xl md:text-7xl text-center font-semibold'>
                     Hey There,<br></br>
-                    I am<span className='text-teal-500 text-shadow-2xs'> Rohit Thapa</span>,<br></br>
+                    I am<span className='text-teal-500  text-shadow-2xs'> Rohit Thapa</span>,<br></br>
                     Dedicated MERN stack developer.
                 </h1>
                 <p className='text-md md:text-lg font-outfit md:font-Manrope text-center mt-5 max-[720px]:w-90'>
