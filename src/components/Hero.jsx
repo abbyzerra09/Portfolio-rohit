@@ -22,7 +22,7 @@ function HeroSection(){
                     I am<span className='text-teal-500 text-shadow-2xs'> Rohit Thapa</span>,<br></br>
                     Dedicated MERN stack developer.
                 </h1>
-                <p className='font-Manrope text-[17px] md:text-[20px] text-center mt-5 max-[720px]:w-90'>
+                <p className='text-md md:text-lg font-outfit md:font-Manrope text-center mt-5 max-[720px]:w-90'>
                    Highly dedicated <span className="text-teal-500 text-shadow-2xs">MERN Stack Developer </span>
                    specializing in building 💡 scalable and user-centric web applications.✨
                 </p>
