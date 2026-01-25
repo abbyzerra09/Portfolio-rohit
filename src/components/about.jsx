@@ -4,7 +4,7 @@ import { FaFacebook, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
 function About(){
     return (
       <>
-        <div className="bg-[#FCFCFC]">
+        <div className="bg-[#FCFCFC] ">
           <div className="max-w-6xl mx-auto px-6 py-12 font-sans pt-25">
             <div className="mb-8 border-b border-gray-300">
               <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 md:mb-3 font-Bricolage">
