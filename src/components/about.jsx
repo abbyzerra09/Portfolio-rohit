@@ -5,7 +5,7 @@ function About(){
     return (
       <>
         <div className="bg-[#FCFCFC] ">
-          <div className="max-w-6xl mx-auto px-6 py-12 font-sans pt-25">
+          <div className="max-w-6xl mx-auto px-6 py-12 pt-25">
             <div className="mb-8 border-b border-gray-300">
               <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 md:mb-3 font-Bricolage">
                 About Me
@@ -32,7 +32,7 @@ function About(){
                   </button>
 
                   <div className="flex items-center gap-5 text-2xl text-gray-800">
-                    <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors"> <FaGithub /> </a>
+                    <a href="https://github.com/abbyzerra09" target="_blank" className="text-gray-700 hover:text-gray-900 transition-colors"> <FaGithub /> </a>
                     <a href="#" className="hover:text-blue-700 transition-colors"> <FaLinkedin /> </a>
                     <a href="#" className="hover:text-blue-500 transition-colors"> <FaFacebook /> </a>
                     <a href="#" className="hover:text-pink-600 transition-colors"> <FaInstagram /> </a>
