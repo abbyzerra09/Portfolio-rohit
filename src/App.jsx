@@ -1,6 +1,7 @@
 import Header from './components/header'
 import HeroSection from './components/Hero'
 import About from './components/about' 
+import Projects from './components/project'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <HeroSection/>
       <About/>
+      <Projects/>
     </>
   )
 }
