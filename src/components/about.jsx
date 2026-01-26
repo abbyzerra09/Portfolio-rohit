@@ -20,14 +20,14 @@ function About(){
                   experiences.
                 </p>
                 <p className="text-md md:text-lg text-gray-600 font-outfit">
-                  "As an aspiring Web Developer, I focus on building seamless,
+                  "As an aspiring Web Developer, I focus on building seamless,a
                    high-performance web applications. With a solid foundation 
                    in React and Tailwind CSS, I enjoy turning complex problems 
                    into clean, functional code."
                 </p>
 
                 <div className="flex flex-wrap items-center gap-6 pt-4">
-                  <button className="bg-gray-200 hover:bg-black text-gray-900 hover:text-white transition-all duration-300 font-medium py-3 px-8 rounded-xl font-outfit">
+                  <button className="bg-gray-200 font-medium py-3 px-6 rounded-xl font-outfit cursor-pointer">
                     About Me
                   </button>
 
