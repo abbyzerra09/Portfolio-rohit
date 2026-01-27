@@ -5,7 +5,7 @@ function Projects(){
     return(
         <>
         <div className="bg-[#FCFCFC]">
-            <div className="min-h-screen max-w-6xl mx-auto pt-10 md:pt-25 px-6">
+            <div className="min-h-screen max-w-6xl mx-auto pt-10 md:pt-25 px-6 pb-10">
                 <div className="mb-5 border-b border-gray-300">
                     <h2 className="text-3xl md:text-4xl font-Bricolage font-semibold text-gray-800 md:mb-3 mb-1">Current Projects</h2>
                 </div>
