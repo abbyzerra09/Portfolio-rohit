@@ -19,12 +19,12 @@ function Projects(){
                             <p className="font-outfit text-sm font-medium text-gray-700">React, Tailwindcss</p>
                         </div>
                         <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-gray-200 hover:bg-black text-gray-900 hover:text-white transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://github.com/abbyzerra09/BistroBlisss.git' target="_blank">Github Link</a>
+                            <button className="bg-red-600 hover:bg-red-700 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                               <a href='https://bistrobliss-web.netlify.app/' target='_blank'>Check Project</a>
                             </button>
 
-                            <button className="bg-gray-200 hover:bg-black text-gray-900 hover:text-white transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                               <a href='https://bistrobliss-web.netlify.app/' target='_blank'>Check Project</a>
+                            <button className="bg-gray-300 hover:bg-gray-500 text-gray-900 hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                                <a href='https://github.com/abbyzerra09/BistroBlisss.git' target="_blank">Github Link</a>
                             </button>
                         </div>
                     </div>
@@ -38,12 +38,12 @@ function Projects(){
                             <p className="font-outfit text-sm font-medium text-gray-700">HTML, CSS</p>
                         </div>
                         <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-gray-200 hover:bg-black text-gray-900 hover:text-white transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://github.com/abbyzerra09/Glow-project.git' target='_blank'>Github Link</a>
+                            <button className="bg-stone-600/80 hover:bg-stone-700/80 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                                <a href='https://rohit-glow-project.netlify.app/' target='_blank'>Check Project</a>
                             </button>
 
-                            <button className="bg-gray-200 hover:bg-black text-gray-900 hover:text-white transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://rohit-glow-project.netlify.app/' target='_blank'>Check Project</a>
+                            <button className="bg-gray-300 hover:bg-gray-500 text-gray-900 hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                                <a href='https://github.com/abbyzerra09/Glow-project.git' target='_blank'>Github Link</a>
                             </button>
                         </div>
                     </div>
@@ -57,12 +57,12 @@ function Projects(){
                             <p className="font-outfit text-sm font-medium text-gray-700">HTML, CSS</p>
                         </div>
                         <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-gray-200 hover:bg-black text-gray-900 hover:text-white transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://github.com/abbyzerra09/skillshikshya-repo.git' target='_blank'>Github Link</a>
+                            <button className="bg-emerald-600 hover:bg-emerald-700 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                                <a href='https://rohit-skillshikshya-project.netlify.app/' target='_blank'>Check Project</a>
                             </button>
 
-                            <button className="bg-gray-200 hover:bg-black text-gray-900 hover:text-white transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer" >
-                                <a href='https://rohit-skillshikshya-project.netlify.app/' target='_blank'>Check Project</a>
+                            <button className="bg-gray-300 hover:bg-gray-500 text-gray-900 hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                                <a href='https://github.com/abbyzerra09/skillshikshya-repo.git' target='_blank'>Github Link</a>
                             </button>
                         </div>
                     </div>
