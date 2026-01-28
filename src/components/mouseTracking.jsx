@@ -11,45 +11,51 @@ const MouseTracking = () => {
   });
 
   useEffect(() => {
-    // 1. Exit if mobile/tablet
     if (window.innerWidth < 768) return; 
 
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d', { alpha: true }); // Ensure alpha optimization
     let animationFrameId;
 
     const resize = () => {
-      const parent = canvas.parentElement;
+      // Use window dimensions instead of parent to keep canvas small
       const dpr = window.devicePixelRatio || 1;
-      canvas.width = parent.offsetWidth * dpr;
-      canvas.height = parent.offsetHeight * dpr;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
       ctx.scale(dpr, dpr);
-      canvas.style.width = `${parent.offsetWidth}px`;
-      canvas.style.height = `${parent.offsetHeight}px`;
+      canvas.style.width = `${window.innerWidth}px`;
+      canvas.style.height = `${window.innerHeight}px`;
     };
 
     const handleMouseMove = (e) => {
-      const rect = canvas.getBoundingClientRect();
-      mouse.current = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+      // With 'fixed' positioning, we just use client coordinates
+      mouse.current = { x: e.clientX, y: e.clientY };
     };
 
     const handleCursorUpdate = (e) => {
-      cursorState.current.targetScale = e.detail.scale || 1;
+      cursorState.current.targetScale = e.detail.scale ?? 1;
       cursorState.current.label = e.detail.label || "";
-      cursorState.current.targetOpacity = e.detail.scale > 1 ? 1 : 0.6; 
+      // Allow scale 0 to fully hide the cursor
+      cursorState.current.targetOpacity = e.detail.scale === 0 ? 0 : (e.detail.scale > 1 ? 1 : 0.6); 
       cursorState.current.isButton = !!e.detail.label; 
     };
 
     const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
       // Smooth following
-      delayedMouse.current.x += (mouse.current.x - delayedMouse.current.x) * 0.2;
-      delayedMouse.current.y += (mouse.current.y - delayedMouse.current.y) * 0.2;
+      delayedMouse.current.x += (mouse.current.x - delayedMouse.current.x) * 0.15;
+      delayedMouse.current.y += (mouse.current.y - delayedMouse.current.y) * 0.15;
 
       // Smooth scaling
       cursorState.current.currentScale += (cursorState.current.targetScale - cursorState.current.currentScale) * 0.1;
       cursorState.current.currentOpacity += (cursorState.current.targetOpacity - cursorState.current.currentOpacity) * 0.1;
+
+      // Skip drawing entirely if invisible to save CPU
+      if (cursorState.current.currentScale < 0.01) {
+        animationFrameId = requestAnimationFrame(animate);
+        return;
+      }
 
       const dx = mouse.current.x - delayedMouse.current.x;
       const dy = mouse.current.y - delayedMouse.current.y;
@@ -58,12 +64,15 @@ const MouseTracking = () => {
       const baseRadius = 12 * cursorState.current.currentScale; 
       const stretch = Math.min(distance * 0.25, 15); 
 
+      // Use Math.round to prevent sub-pixel rendering lag
+      const drawX = Math.round(delayedMouse.current.x);
+      const drawY = Math.round(delayedMouse.current.y);
+
       ctx.save();
-      ctx.translate(delayedMouse.current.x, delayedMouse.current.y);
+      ctx.translate(drawX, drawY);
       ctx.globalAlpha = cursorState.current.currentOpacity;
       ctx.rotate(angle);
 
-      // Draw Ball
       ctx.beginPath();
       ctx.fillStyle = cursorState.current.isButton ? "white" : "rgba(255, 255, 255, 0.2)"; 
       ctx.strokeStyle = 'black';
@@ -73,10 +82,9 @@ const MouseTracking = () => {
       ctx.stroke();
       ctx.restore();
 
-      // Draw Label
       if (cursorState.current.label && cursorState.current.currentScale > 2) {
         ctx.save();
-        ctx.translate(delayedMouse.current.x, delayedMouse.current.y);
+        ctx.translate(drawX, drawY);
         ctx.fillStyle = "black";
         ctx.font = '600 9px sans-serif'; 
         ctx.textAlign = 'center';
@@ -106,7 +114,7 @@ const MouseTracking = () => {
   return (
     <canvas 
       ref={canvasRef} 
-      className="hidden md:block absolute inset-0 pointer-events-none z-999" 
+      className="hidden md:block fixed top-0 left-0 pointer-events-none z-9999" 
     />
   );
 };

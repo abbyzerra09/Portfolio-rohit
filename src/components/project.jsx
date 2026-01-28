@@ -10,11 +10,11 @@ function Projects(){
         <>
         <div className="bg-[#FCFCFC]">
             <div className="min-h-screen max-w-6xl mx-auto pt-10 md:pt-25 px-6">
-                <div className="mb-5 border-b border-gray-300">
+                <div className="mb-5">
                     <h2 className="text-3xl md:text-4xl font-Bricolage font-semibold text-gray-800 md:mb-3 mb-1 inline-block"
                         onMouseEnter={() => updateCursor(2)}
                         onMouseLeave={() => updateCursor(1)}>
-                    Current Projects
+                    <span className='border-b border-gray-400'>Current <span className='text-teal-500'> Projects</span></span>
                     </h2>
                 </div>
                 <div className="flex flex-wrap gap-6">
