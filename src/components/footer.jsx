@@ -84,17 +84,13 @@ const Footer = () => {
 
         {/* Center: Socials */}
         <div className="flex items-center gap-6">
-          <a href="#" className="text-2xl text-slate-400 hover:text-black transition-colors"
+          <a href="https://github.com/abbyzerra09" target="_blank" className="text-2xl text-slate-400 hover:text-black transition-colors"
              onMouseEnter={() => triggerCursor(2.5)} onMouseLeave={() => triggerCursor(1)}>
             <RiGithubFill />
           </a>
-          <a href="#" className="text-2xl text-slate-400 hover:text-blue-600 transition-colors"
+          <a href="https://www.linkedin.com/in/rohit-thapa-287811399/" target="_blank" className="text-2xl text-slate-400 hover:text-blue-600 transition-colors"
              onMouseEnter={() => triggerCursor(2.5)} onMouseLeave={() => triggerCursor(1)}>
             <RiLinkedinBoxFill />
-          </a>
-          <a href="#" className="text-2xl text-slate-400 hover:text-black transition-colors"
-             onMouseEnter={() => triggerCursor(2.5)} onMouseLeave={() => triggerCursor(1)}>
-            <RiTwitterXFill />
           </a>
         </div>
 

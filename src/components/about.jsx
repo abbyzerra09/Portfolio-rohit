@@ -45,9 +45,9 @@ function About(){
 
                   <div className="flex items-center gap-5 text-2xl text-gray-800">
                     <a href="https://github.com/abbyzerra09" target="_blank" className="text-gray-700 hover:text-gray-900 transition-colors"> <FaGithub /> </a>
-                    <a href="#" className="hover:text-blue-700 transition-colors"> <FaLinkedin /> </a>
-                    <a href="#" className="hover:text-blue-500 transition-colors"> <FaFacebook /> </a>
-                    <a href="#" className="hover:text-pink-600 transition-colors"> <FaInstagram /> </a>
+                    <a href="https://www.linkedin.com/in/rohit-thapa-287811399/" target="_blank" className="hover:text-blue-700 transition-colors"> <FaLinkedin /> </a>
+                    <a href="https://www.facebook.com/rohit.thapa.44365" target="_blank" className="hover:text-blue-500 transition-colors"> <FaFacebook /> </a>
+                    <a href="https://www.instagram.com/yccm_rohit/?hl=en" target="_blank" className="hover:text-pink-600 transition-colors"> <FaInstagram /> </a>
                   </div>
                 </div>
               </div>
