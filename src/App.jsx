@@ -4,6 +4,8 @@ import About from './components/about'
 import Projects from './components/project'
 import Marquee from './components/runningContainer'
 import MouseTracking from './components/mouseTracking'
+import Education from './components/Education'
+import Contact from './components/contact'
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <About/>
       <Projects/>
       <Marquee/>
+      <Education/>
+      <Contact/>
     </>
   )
 }
