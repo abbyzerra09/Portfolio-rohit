@@ -6,6 +6,7 @@ import Marquee from './components/runningContainer'
 import MouseTracking from './components/mouseTracking'
 import Education from './components/Education'
 import Contact from './components/contact'
+import Footer from './components/footer'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Marquee/>
       <Education/>
       <Contact/>
+      <Footer/>
     </>
   )
 }
