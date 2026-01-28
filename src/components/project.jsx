@@ -23,17 +23,17 @@ function Projects(){
                         onMouseEnter={() => updateCursor(2)}
                         onMouseLeave={() => updateCursor(1)}></img>
                         <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>BistroBliss</h3>
-                        <p className='pt-2 flex justify-center text-center font-outfit'>This is a Business Website for a Fast Food Resturant named BistroBliss.</p>
+                        <p className='pt-2 flex justify-center text-center font-outfit text-gray-600'>This is a Business Website for a Fast Food Resturant named BistroBliss.</p>
                         <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
                             <span className="text-xs font-bold uppercase tracking-wider text-gray-400">Components:</span>
                             <p className="font-outfit text-sm font-medium text-gray-700">React, Tailwindcss</p>
                         </div>
                         <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-red-600 hover:bg-red-700 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                            <button className="bg-black hover:bg-teal-600 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
                                <a href='https://bistrobliss-web.netlify.app/' target='_blank'>Check Project</a>
                             </button>
 
-                            <button className="bg-gray-300 hover:bg-gray-500 text-gray-900 hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                            <button className="bg-gray-200 border border-slate-200 hover:border-zinc-900 text-gray-700 hover:text-zinc-900 transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
                                 <a href='https://github.com/abbyzerra09/BistroBlisss.git' target="_blank">Github Link</a>
                             </button>
                         </div>
@@ -44,17 +44,17 @@ function Projects(){
                         onMouseEnter={() => updateCursor(2)}
                         onMouseLeave={() => updateCursor(1)}></img>
                         <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>Glow.Care</h3>
-                        <p className='pt-2 flex justify-center text-center font-outfit'>This is a Business Website for a online based medicinal herbal skincare store named Glow.</p>
+                        <p className='pt-2 flex justify-center text-center font-outfit text-gray-600'>This is a Business Website for a online based medicinal herbal skincare store named Glow.</p>
                         <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
                             <span className="text-xs font-bold uppercase tracking-wider text-gray-400">Components:</span>
                             <p className="font-outfit text-sm font-medium text-gray-700">HTML, CSS</p>
                         </div>
                         <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-stone-600/80 hover:bg-stone-700/80 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                            <button className="bg-black hover:bg-teal-600 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
                                 <a href='https://rohit-glow-project.netlify.app/' target='_blank'>Check Project</a>
                             </button>
 
-                            <button className="bg-gray-300 hover:bg-gray-500 text-gray-900 hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                            <button className="bg-gray-200 border border-slate-200 hover:border-zinc-900 text-gray-700 hover:text-zinc-900 transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
                                 <a href='https://github.com/abbyzerra09/Glow-project.git' target='_blank'>Github Link</a>
                             </button>
                         </div>
@@ -65,17 +65,17 @@ function Projects(){
                         onMouseEnter={() => updateCursor(2)}
                         onMouseLeave={() => updateCursor(1)}></img>
                         <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>Skill Shikshya</h3>
-                        <p className='pt-2 flex justify-center text-center font-outfit'>This is a IT Training institute Website named Skill Shikshya which i have replicated.</p>
+                        <p className='pt-2 flex justify-center text-center font-outfit text-gray-600'>This is a IT Training institute Website named Skill Shikshya which i have replicated.</p>
                         <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
                             <span className="text-xs font-bold uppercase tracking-wider text-gray-400">Components:</span>
                             <p className="font-outfit text-sm font-medium text-gray-700">HTML, CSS</p>
                         </div>
                         <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-emerald-600 hover:bg-emerald-700 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                            <button className="bg-black hover:bg-teal-600 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
                                 <a href='https://rohit-skillshikshya-project.netlify.app/' target='_blank'>Check Project</a>
                             </button>
 
-                            <button className="bg-gray-300 hover:bg-gray-500 text-gray-900 hover:text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
+                            <button className="bg-gray-200 border border-slate-200 hover:border-zinc-900 text-gray-700 hover:text-zinc-900 transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
                                 <a href='https://github.com/abbyzerra09/skillshikshya-repo.git' target='_blank'>Github Link</a>
                             </button>
                         </div>
