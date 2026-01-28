@@ -2,16 +2,26 @@ import BirstoBlissProject from '../assets/BistroBlissProject.webp'
 import GlowProject from '../assets/GlowProject.webp'
 import SkillShikshyaProject from '../assets/SkillShikshyaProject.webp'
 function Projects(){
+    const updateCursor = (scale, label = "") => {
+        const event = new CustomEvent('cursorUpdate', { detail: { scale, label } });
+        window.dispatchEvent(event);
+    };
     return(
         <>
         <div className="bg-[#FCFCFC]">
             <div className="min-h-screen max-w-6xl mx-auto pt-10 md:pt-25 px-6 pb-10">
                 <div className="mb-5 border-b border-gray-300">
-                    <h2 className="text-3xl md:text-4xl font-Bricolage font-semibold text-gray-800 md:mb-3 mb-1">Current Projects</h2>
+                    <h2 className="text-3xl md:text-4xl font-Bricolage font-semibold text-gray-800 md:mb-3 mb-1 inline-block"
+                        onMouseEnter={() => updateCursor(2)}
+                        onMouseLeave={() => updateCursor(1)}>
+                    Current Projects
+                    </h2>
                 </div>
                 <div className="flex flex-wrap gap-6">
                     <div className="group flex-1 max-w-sm min-w-70 bg-slate-50 border-slate-200 hover:bg-white hover:shadow-xl rounded-xl pt-10 px-2 shadow-md transition-all duration-200">
-                        <img src={BirstoBlissProject} className='group-hover:scale-110 transition-all duration-400'></img>
+                        <img src={BirstoBlissProject} className='group-hover:scale-110 transition-all duration-400'
+                        onMouseEnter={() => updateCursor(2)}
+                        onMouseLeave={() => updateCursor(1)}></img>
                         <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>BistroBliss</h3>
                         <p className='pt-2 flex justify-center text-center font-outfit'>This is a Business Website for a Fast Food Resturant named BistroBliss.</p>
                         <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
@@ -30,7 +40,9 @@ function Projects(){
                     </div>
 
                     <div className="group flex-1 max-w-sm min-w-70 bg-slate-50 border-slate-200 hover:bg-white hover:shadow-xl rounded-xl pt-10 px-2 shadow-md transition-all duration-200">
-                        <img src={GlowProject} className='group-hover:scale-110 transition-all duration-300'></img>
+                        <img src={GlowProject} className='group-hover:scale-110 transition-all duration-300'
+                        onMouseEnter={() => updateCursor(2)}
+                        onMouseLeave={() => updateCursor(1)}></img>
                         <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>Glow.Care</h3>
                         <p className='pt-2 flex justify-center text-center font-outfit'>This is a Business Website for a online based medicinal herbal skincare store named Glow.</p>
                         <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
@@ -49,7 +61,9 @@ function Projects(){
                     </div>
 
                     <div className="group flex-1 max-w-sm min-w-70 bg-slate-50 border-slate-200 hover:bg-white hover:shadow-xl rounded-xl pt-10 px-2 shadow-md transition-all duration-200">
-                        <img src={SkillShikshyaProject} className='group-hover:scale-110 transition-all duration-300'></img>
+                        <img src={SkillShikshyaProject} className='group-hover:scale-110 transition-all duration-300'
+                        onMouseEnter={() => updateCursor(2)}
+                        onMouseLeave={() => updateCursor(1)}></img>
                         <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>Skill Shikshya</h3>
                         <p className='pt-2 flex justify-center text-center font-outfit'>This is a IT Training institute Website named Skill Shikshya which i have replicated.</p>
                         <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">

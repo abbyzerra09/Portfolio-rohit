@@ -3,6 +3,12 @@ import { RiReactjsLine, RiTailwindCssFill, RiHtml5Fill, RiCss3Fill, RiGithubFill
 import { SiTypescript, SiFigma, SiGit, SiNextdotjs } from "react-icons/si";
 
 const Marquee = () => {
+
+  const updateCursor = (scale, label = "") => {
+        const event = new CustomEvent('cursorUpdate', { detail: { scale, label } });
+        window.dispatchEvent(event);
+    };
+
   const technologies = [{ icon: <RiReactjsLine/>, color: "#61DAFB" },{ icon: <SiNextdotjs/>, color: "#000000"},{ icon: <RiTailwindCssFill/>, color: "#38B2AC" },{ icon: <SiTypescript/>, color: "#3178C6" },{ icon: <RiHtml5Fill/>, color: "#E34F26" },{ icon: <RiCss3Fill/>, color: "#1572B6" },{ icon: <SiFigma/>, color: "#F24E1E" },{ icon: <SiGit/>, color: "#F05032" },{ icon: <RiGithubFill/>, color: "#181717" },
   ];
 
@@ -21,9 +27,11 @@ const Marquee = () => {
   );
 
   return (
-    <div className="relative block w-full py-12 md:py-20 bg-[#FCFCFC] overflow-hidden ">
+    <div className="block w-full py-12 md:py-20 bg-[#FCFCFC] overflow-hidden ">
       <div className="mx-auto w-full max-w-7xl px-4">
-        <h3 className="text-center text-sm md:text-lg font-semibold text-slate-400 mb-8 md:mb-12 uppercase tracking-widest">
+        <h3 className="text-center text-sm md:text-lg font-semibold text-slate-400 mb-8 md:mb-12 uppercase"
+          onMouseEnter={() => updateCursor(2)}
+          onMouseLeave={() => updateCursor(1)}>
           My Tech Stack
         </h3>
 
