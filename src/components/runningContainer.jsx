@@ -1,6 +1,6 @@
 import '../App.css'
 import { RiReactjsLine, RiTailwindCssFill, RiHtml5Fill, RiCss3Fill, RiGithubFill } from "react-icons/ri";
-import { SiTypescript, SiFigma, SiGit, SiNextdotjs } from "react-icons/si";
+import { SiTypescript, SiFigma, SiGit, SiNextdotjs, SiJavascript } from "react-icons/si";
 
 const Marquee = () => {
 
@@ -9,7 +9,7 @@ const Marquee = () => {
         window.dispatchEvent(event);
     };
 
-  const technologies = [{ icon: <RiReactjsLine/>, color: "#61DAFB" },{ icon: <SiNextdotjs/>, color: "#000000"},{ icon: <RiTailwindCssFill/>, color: "#38B2AC" },{ icon: <SiTypescript/>, color: "#3178C6" },{ icon: <RiHtml5Fill/>, color: "#E34F26" },{ icon: <RiCss3Fill/>, color: "#1572B6" },{ icon: <SiFigma/>, color: "#F24E1E" },{ icon: <SiGit/>, color: "#F05032" },{ icon: <RiGithubFill/>, color: "#181717" },
+  const technologies = [{ icon: <RiReactjsLine/>, color: "#61DAFB" },{ icon: <SiJavascript/>, color:"#F7DF1E" },{ icon: <SiNextdotjs/>, color: "#000000"},{ icon: <RiTailwindCssFill/>, color: "#38B2AC" },{ icon: <SiTypescript/>, color: "#3178C6" },{ icon: <RiHtml5Fill/>, color: "#E34F26" },{ icon: <RiCss3Fill/>, color: "#1572B6" },{ icon: <SiFigma/>, color: "#F24E1E" },{ icon: <SiGit/>, color: "#F05032" },{ icon: <RiGithubFill/>, color: "#181717" },
   ];
 
   const MarqueeItem = () => (
