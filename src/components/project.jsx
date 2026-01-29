@@ -1,90 +1,94 @@
-import BirstoBlissProject from '../assets/BistroBlissProject.webp'
-import GlowProject from '../assets/GlowProject.webp'
-import SkillShikshyaProject from '../assets/SkillShikshyaProject.webp'
-function Projects(){
-    const updateCursor = (scale, label = "") => {
-        const event = new CustomEvent('cursorUpdate', { detail: { scale, label } });
-        window.dispatchEvent(event);
-    };
-    return(
-        <>
-        <div className="bg-[#FCFCFC]">
-            <div className="min-h-screen max-w-6xl mx-auto pt-10 md:pt-25 px-6">
-                <div className="mb-5">
-                    <h2 className="text-3xl md:text-4xl font-Bricolage font-semibold text-gray-800 md:mb-3 mb-1 inline-block"
-                        onMouseEnter={() => updateCursor(2)}
-                        onMouseLeave={() => updateCursor(1)}>
-                    <span className='border-b border-gray-400'>Current <span className='text-teal-500'> Projects</span></span>
-                    </h2>
-                </div>
-                <div className="flex flex-wrap gap-6">
-                    <div className="group flex-1 max-w-sm min-w-70 bg-slate-50 border-slate-200 hover:bg-white hover:shadow-xl rounded-xl pt-10 px-2 shadow-md transition-all duration-200">
-                        <img src={BirstoBlissProject} className='group-hover:scale-110 transition-all duration-400'
-                        onMouseEnter={() => updateCursor(2)}
-                        onMouseLeave={() => updateCursor(1)}></img>
-                        <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>BistroBliss</h3>
-                        <p className='pt-2 flex justify-center text-center font-outfit text-gray-600'>This is a Business Website for a Fast Food Resturant named BistroBliss.</p>
-                        <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
-                            <span className="text-xs font-bold uppercase tracking-wider text-gray-400">Components:</span>
-                            <p className="font-outfit text-sm font-medium text-gray-700">React, Tailwindcss</p>
-                        </div>
-                        <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-black hover:bg-teal-600 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                               <a href='https://bistrobliss-web.netlify.app/' target='_blank'>Check Project</a>
-                            </button>
+import BirstoBlissProject from '../assets/BistroBlissProject.webp';
+import GlowProject from '../assets/GlowProject.webp';
+import SkillShikshyaProject from '../assets/SkillShikshyaProject.webp';
+import rohitPortfolio from '../assets/rohitPortfolio.webp'
 
-                            <button className="bg-gray-200 border border-slate-200 hover:border-zinc-900 text-gray-700 hover:text-zinc-900 transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://github.com/abbyzerra09/BistroBlisss.git' target="_blank">Github Link</a>
-                            </button>
-                        </div>
-                    </div>
+const PROJECTS_DATA = [
+  {
+    title: "Rohit Portfolio",
+    img: rohitPortfolio,
+    desc: "This is my own Portfolio website which i have created using React Js and Tailwind CSS",
+    tech: "React, Tailwindcss",
+    live: "https://thapa-rohit-portfolio.netlify.app/",
+    github: "https://github.com/abbyzerra09/Portfolio-rohit.git"
+  },
+  {
+    title: "BistroBliss",
+    img: BirstoBlissProject,
+    desc: "This is a Business Website for a Fast Food Restaurant named BistroBliss.",
+    tech: "React, Tailwindcss",
+    live: "https://bistrobliss-web.netlify.app/",
+    github: "https://github.com/abbyzerra09/BistroBlisss.git"
+  },
+  {
+    title: "Glow.Care",
+    img: GlowProject,
+    desc: "This is a Business Website for an online based medicinal herbal skincare store named Glow.",
+    tech: "HTML, CSS",
+    live: "https://rohit-glow-project.netlify.app/",
+    github: "https://github.com/abbyzerra09/Glow-project.git"
+  },
+  {
+    title: "Skill Shikshya",
+    img: SkillShikshyaProject,
+    desc: "This is an IT Training institute Website named Skill Shikshya which I have replicated.",
+    tech: "HTML, CSS",
+    live: "https://rohit-skillshikshya-project.netlify.app/",
+    github: "https://github.com/abbyzerra09/skillshikshya-repo.git"
+  }
+];
 
-                    <div className="group flex-1 max-w-sm min-w-70 bg-slate-50 border-slate-200 hover:bg-white hover:shadow-xl rounded-xl pt-10 px-2 shadow-md transition-all duration-200">
-                        <img src={GlowProject} className='group-hover:scale-110 transition-all duration-300'
-                        onMouseEnter={() => updateCursor(2)}
-                        onMouseLeave={() => updateCursor(1)}></img>
-                        <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>Glow.Care</h3>
-                        <p className='pt-2 flex justify-center text-center font-outfit text-gray-600'>This is a Business Website for a online based medicinal herbal skincare store named Glow.</p>
-                        <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
-                            <span className="text-xs font-bold uppercase tracking-wider text-gray-400">Components:</span>
-                            <p className="font-outfit text-sm font-medium text-gray-700">HTML, CSS</p>
-                        </div>
-                        <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-black hover:bg-teal-600 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://rohit-glow-project.netlify.app/' target='_blank'>Check Project</a>
-                            </button>
+function Projects() {
+  const updateCursor = (scale, label = "") => {
+    window.dispatchEvent(new CustomEvent('cursorUpdate', { detail: { scale, label } }));
+  };
 
-                            <button className="bg-gray-200 border border-slate-200 hover:border-zinc-900 text-gray-700 hover:text-zinc-900 transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://github.com/abbyzerra09/Glow-project.git' target='_blank'>Github Link</a>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="group flex-1 max-w-sm min-w-70 bg-slate-50 border-slate-200 hover:bg-white hover:shadow-xl rounded-xl pt-10 px-2 shadow-md transition-all duration-200">
-                        <img src={SkillShikshyaProject} className='group-hover:scale-110 transition-all duration-300'
-                        onMouseEnter={() => updateCursor(2)}
-                        onMouseLeave={() => updateCursor(1)}></img>
-                        <h3 className='pt-5 flex justify-center text-xl md:text-2xl font-Bricolage font-semibold'>Skill Shikshya</h3>
-                        <p className='pt-2 flex justify-center text-center font-outfit text-gray-600'>This is a IT Training institute Website named Skill Shikshya which i have replicated.</p>
-                        <div className="mt-5 flex items-center justify-center gap-2 flex-wrap pb-5">
-                            <span className="text-xs font-bold uppercase tracking-wider text-gray-400">Components:</span>
-                            <p className="font-outfit text-sm font-medium text-gray-700">HTML, CSS</p>
-                        </div>
-                        <div className='text-bold font-outfit pb-10 flex justify-center gap-5'>
-                            <button className="bg-black hover:bg-teal-600 text-white transition-colors duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://rohit-skillshikshya-project.netlify.app/' target='_blank'>Check Project</a>
-                            </button>
-
-                            <button className="bg-gray-200 border border-slate-200 hover:border-zinc-900 text-gray-700 hover:text-zinc-900 transition-all duration-300 font-medium py-3 px-6 rounded-xl font-outfit shadow-xl cursor-pointer">
-                                <a href='https://github.com/abbyzerra09/skillshikshya-repo.git' target='_blank'>Github Link</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="bg-[#FCFCFC]">
+      <div className="min-h-screen max-w-6xl mx-auto pt-10 md:pt-25 px-6">
+        <div className="mb-5">
+          <h2 className="text-3xl md:text-4xl font-Bricolage font-semibold text-gray-800 inline-block"
+              onMouseEnter={() => updateCursor(2)} onMouseLeave={() => updateCursor(1)}>
+            <span className='border-b border-gray-400'>Current <span className='text-teal-500'>Projects</span></span>
+          </h2>
         </div>
-        </>
-    );
+
+        <div className="flex flex-wrap gap-6">
+          {PROJECTS_DATA.map((project, index) => (
+            <div key={index} className="group flex-1 max-w-sm min-w-70 bg-slate-50 border border-slate-200 hover:bg-white hover:shadow-xl rounded-xl pt-10 px-4 shadow-md transition-all duration-300">
+              
+              <img 
+                src={project.img} 
+                alt={project.title}
+                className='group-hover:scale-115 transition-transform duration-500 rounded-lg'
+                onMouseEnter={() => updateCursor(3, "VIEW")} 
+                onMouseLeave={() => updateCursor(1)}
+              />
+
+              <h3 className='pt-5 text-center text-xl md:text-2xl font-Bricolage font-semibold'>{project.title}</h3>
+              <p className='pt-2 text-center font-outfit text-gray-600 text-sm'>{project.desc}</p>
+              
+              <div className="mt-5 flex items-center justify-center gap-2 pb-5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">Tech:</span>
+                <p className="font-outfit text-sm font-medium text-gray-700">{project.tech}</p>
+              </div>
+
+              <div className='pb-10 flex justify-center gap-4'>
+                <a href={project.live} target='_blank' rel="noreferrer" 
+                   className="bg-black hover:bg-teal-600 text-white transition-all py-3 px-5 rounded-xl text-sm font-medium shadow-lg">
+                  Check Project
+                </a>
+                <a href={project.github} target='_blank' rel="noreferrer"
+                   className="bg-gray-200 hover:border-black border transition-all duration-300 border-transparent text-gray-700 py-3 px-5 rounded-xl text-sm font-medium shadow-md">
+                  Github
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Projects;
